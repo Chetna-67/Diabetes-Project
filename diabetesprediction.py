@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 from sklearn.metrics import accuracy_score
 from sklearn.ensemble import RandomForestClassifier
-data = pd.read_csv('/Users/swamy/Downloads/diabetes.csv')
+data = pd.read_csv('diabetes.csv')
 df = data.iloc[:500]
 x = df[['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 
        'DiabetesPedigreeFunction', 'Age']]
